@@ -1,6 +1,6 @@
 const { Reaction } = require("../../models");
 
-const createReactionForThought = (req, res) => {};
-const deleteReactionByThought = (req, res) => {};
+const createReactionForThought = async (req, res) => {};
+const deleteReactionByThought = async (req, res) => {};
 
 module.exports = { createReactionForThought, deleteReactionByThought };

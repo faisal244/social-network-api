@@ -1,10 +1,10 @@
 const { Thought } = require("../../models");
 
-const getThoughts = (req, res) => {};
-const getThoughtById = (req, res) => {};
-const createThought = (req, res) => {};
-const updateThoughtById = (req, res) => {};
-const deleteThoughtById = (req, res) => {};
+const getThoughts = async (req, res) => {};
+const getThoughtById = async (req, res) => {};
+const createThought = async (req, res) => {};
+const updateThoughtById = async (req, res) => {};
+const deleteThoughtById = async (req, res) => {};
 
 module.exports = {
 	getThoughts,
