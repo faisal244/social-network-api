@@ -1,24 +1,24 @@
 const users = [
 	{
-		username: "Faisal",
+		userName: "Faisal",
 		email: "faisal@gmail.com",
 		thoughts: [],
 		friends: [],
 	},
 	{
-		username: "Barry",
+		userName: "Barry",
 		email: "bazza@gmail.com",
 		thoughts: [],
 		friends: [],
 	},
 	{
-		username: "BobLobLaw",
+		userName: "BobLobLaw",
 		email: "bobloblaw@hotmail.com",
 		thoughts: [],
 		friends: [],
 	},
 	{
-		username: "Mustafa",
+		userName: "Mustafa",
 		email: "Mustafa@gmail.com",
 		thoughts: [],
 		friends: [],

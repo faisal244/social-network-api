@@ -15,9 +15,9 @@ const getUsers = async (req, res) => {
 const getUserById = async (req, res) => {
 	try {
 		const { userId } = req.params;
-		const data = await User.findById(userId);
-		// .populate("thoughts")
-		// .populate("friends");
+		const data = await User.findById(userId)
+			.populate("thoughts")
+			.populate("friends");
 		return res.json({ success: true, data });
 	} catch (error) {
 		console.log(`[ERROR]: Failed to get user | ${error.message}`);

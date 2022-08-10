@@ -13,36 +13,36 @@ const thoughts = [
 	},
 	{
 		thoughtText: "Fact of the day - All clocks in Pulp Fiction are set to 4:20",
-		username: "BobLobLaw",
+		userName: "BobLobLaw",
 		reactions: [
 			{
 				reactionBody: "NO WAY!",
-				username: "Barry",
+				userName: "Barry",
 			},
 			{
 				reactionBody:
 					"Oh yeah i remember hearing about this ages ago. Did you also hear that some people state that there are two scenes where the clocks are not set to this. We should watch that movie again sometime to figure out which scenes they were.",
-				username: "Mustafa",
+				userName: "Mustafa",
 			},
 		],
 	},
 	{
 		thoughtText:
 			"Fact of the day - The Pokemon Rhydon was the first to ever be created.",
-		username: "Mustafa",
+		userName: "Mustafa",
 		reactions: [
 			{
 				reactionBody: "PIKACHU FOR PRIME MINISTER",
-				username: "Faisal",
+				userName: "Faisal",
 			},
 			{
 				reactionBody: "really? I heard Jackie Chan was the first pokemon?",
-				username: "Barry",
+				userName: "Barry",
 			},
 			{
 				reactionBody:
 					"Saw some dudes playing pokemon on the train the other day. Looked like a vibe - absolute kings.",
-				username: "BobLobLaw",
+				userName: "BobLobLaw",
 			},
 		],
 	},

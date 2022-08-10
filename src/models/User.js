@@ -7,7 +7,7 @@ const userSchema = {
 		required: true,
 		auto: true,
 	},
-	username: {
+	userName: {
 		type: String,
 		required: true,
 		auto: true,
