@@ -2,12 +2,12 @@ const thoughts = [
 	{
 		thoughtText:
 			"Fact of the day - Apple paid a couple $1.7 million dollars for their plot of land, which was only worth $181,700.",
-		username: "Faisal",
+		userName: "Faisal",
 		reactions: [
 			{
 				reactionBody:
 					"No way! Sounds like they got ripped off, in a BIIIIIG way ",
-				username: "Barry",
+				userName: "Barry",
 			},
 		],
 	},

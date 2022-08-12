@@ -1,14 +1,23 @@
 # 18 NoSQL: Social Network API
 
-## Your Task
+## Table of Contents
 
-MongoDB is a popular choice for many social networks due to its speed with large amounts of data and flexibility with unstructured data. Over the last part of this course, you’ll use several of the technologies that social networking platforms use in their full-stack applications. Because the foundation of these applications is data, it’s important that you understand how to build and structure the API first.
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Video Demo](#video-demo)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contact Me](#contact-me)
+- [My Development Environment](#my-development-environment)
+- [Languages, Technologies and Packages used](#languages-technologies-and-packages-used)
 
-Your Challenge is to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM. In addition to using the [Express.js](https://www.npmjs.com/package/express) and [Mongoose](https://www.npmjs.com/package/mongoose) packages, you may also optionally use a JavaScript date library of your choice or the native JavaScript `Date` object to format timestamps.
+## Description
 
-No seed data is provided, so you’ll need to create your own data using Insomnia after you’ve created your API.
+MongoDB is a popular choice for many social networks due to its speed with large amounts of data and flexibility with unstructured data. I have been using several of the technologies that social networking platforms use in their full-stack applications while on my journey to become a full stack developer; And because the foundation of these applications is data, it’s important that i understand how to build and structure the API first.
 
-Because this application won’t be deployed, you’ll also need to create a walkthrough video that demonstrates its functionality and all of the following acceptance criteria being met. You’ll need to submit a link to the video and add it to the README of your project.
+I was tasked with building an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. For this project i used [Express.js](https://www.npmjs.com/package/express) for routing, a [MongoDB](https://www.mongodb.com/) database, and the[Mongoose](https://www.npmjs.com/package/mongoose) ODM.
 
 ## User Story
 
@@ -32,7 +41,7 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 ```
 
-## Mock Up
+## Screenshots
 
 The following animations show examples of the application's API routes being tested in Insomnia.
 

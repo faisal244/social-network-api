@@ -28,30 +28,32 @@ const init = async () => {
 		const usersFromDb = await User.find({});
 
 		const promises = thoughtsFromDb.map(async (thought) => {
-			const username = thought.userName;
-			const user = usersFromDb.find((user) => user.userName === username);
+			const userName = thought.userName;
+			const user = usersFromDb.find((user) => user.userName === userName);
 			user.thoughts.push(thought._id.toString());
 			await User.findByIdAndUpdate(user._id, { ...user });
 		});
 
-		// const friendsPromises = usersFromDb.map(async (user) => {
-		// 	const userId = user._id.toString();
-		// 	const allUsers = usersFromDb.filter(
-		// 		(currentUser) => currentUser.userName !== user.userName
-		// 	);
-		// 	const randomFriend =
-		// 		allUsers[Math.floor(Math.random() * allUsers.length)];
+		const friendsPromises = usersFromDb.map(async (user) => {
+			const userId = user._id.toString();
+			const allUsers = usersFromDb.filter(
+				(currentUser) => currentUser.userName !== user.userName
+			);
+			const randomFriend =
+				allUsers[Math.floor(Math.random() * allUsers.length)];
 
-		// 	user.friends.push(randomFriend._id);
-		// 	await User.findByIdAndUpdate(userId, { ...user });
-		// });
+			user.friends.push(randomFriend._id);
+			await User.findByIdAndUpdate(userId, { ...user });
+		});
 
-		// await Promise.all(promises);
-		// await Promise.all(friendsPromises);
+		await Promise.all(promises);
+		await Promise.all(friendsPromises);
 
 		await mongoose.disconnect();
 	} catch (error) {
-		console.log(`[INFO]: Database connection failed | ${error.message}`);
+		console.log(
+			`[INFO]: Database connection failed  - failed to seed database | ${error.message}`
+		);
 	}
 };
 
