@@ -41,6 +41,20 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 ```
 
+## Video Demo
+
+The following walkthrough videos show initial setup and the POST, PUT, and DELETE routes for products, categories and tags being tested in Postman:
+
+[01 - Start Up - Sourcing schema, seeding database, starting application](https://drive.google.com/file/d/1HlMC5jrlXe0PlGayWbChywq42zh-fPrl/view?usp=sharing)
+
+[02 - GET requests](https://drive.google.com/file/d/1FGiTsXqLJ0FB6sXnmsQLqyADNmYGZxYa/view?usp=sharing)
+
+[03 - POST requests](https://drive.google.com/file/d/1dtIrZQGxSKtC_dvrbjj_E0wajwH-4ADj/view?usp=sharing)
+
+[04 - PUT requests](https://drive.google.com/file/d/1t3Nb7-qjjzseKOuPSvu0EZWk8g58h7kO/view?usp=sharing)
+
+[05 - DELETE requests](https://drive.google.com/file/d/1fXjEss65bC_y3zXAV3Sx4RlmFlvjwo_5/view?usp=sharing)
+
 ## Screenshots
 
 The following animations show examples of the application's API routes being tested in Insomnia.
@@ -65,9 +79,59 @@ The following animation shows the POST and DELETE routes for a user’s friend l
 
 In addition to this, your walkthrough video should show the POST and DELETE routes for reactions to thoughts being tested in Insomnia.
 
-## Getting Started
+## Installation
 
-Be sure to have MongoDB installed on your machine. Follow the [MongoDB installation guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/mongodb/how-to-install-mongodb) to install MongoDB locally.
+The application will be invoked by entering the following 3 commands line by line into your terminal / CLI
+
+```
+
+git clone git@github.com:faisal244/social-network-api.git
+cd social-network-api
+npm install
+
+```
+
+## Usage
+
+Once all the dependancies have been installed, please provide the application with the source database schema by entering the following 2 commands in your terminal:
+
+```
+
+npm run seed
+npm run start
+
+```
+
+## Contact me
+
+- Contact me by Email: [m.faisal244@gmail.com](mailto:m.faisal244@gmail.com)
+
+- [Connect with me on linkedin](https://www.linkedin.com/in/faisal244/)
+
+- [View my Portfolio](https://faisal244.github.io/Portfolio/)
+
+## My Development Environment
+
+- VScode
+- Terminal
+- Nodemon
+- MacOS Monterey
+- Git
+- Github
+
+## Languages, Technologies and Packages used
+
+- Javascript
+- Node.JS v18.7.0
+
+- [NPM] Mongoose
+- [NPM] Express
+- [NPM] Dotenv
+- [NPM] date-fns
+
+---
+
+## Getting Started
 
 Use the following guidelines to set up your models and API routes:
 
@@ -221,16 +285,6 @@ This will not be a model, but rather will be used as the `reaction` field's subd
 - `DELETE` to pull and remove a reaction by the reaction's `reactionId` value
 
 ## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> - A repository that has no code
->
-> - A repository that includes a unique name but nothing else
->
-> - A repository that includes only a README file but nothing else
->
-> - A repository that only includes starter code
 
 This Challenge is graded based on the following criteria:
 
