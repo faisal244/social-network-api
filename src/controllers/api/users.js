@@ -7,7 +7,7 @@ const getUsers = async (req, res) => {
 	} catch (error) {
 		console.log(`[ERROR]: Failed to get users | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Failed to get users" });
 	}
 };
@@ -22,7 +22,7 @@ const getUserById = async (req, res) => {
 	} catch (error) {
 		console.log(`[ERROR]: Failed to get user | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Failed to get user" });
 	}
 };
@@ -34,14 +34,14 @@ const createUser = async (req, res) => {
 			const data = await User.create({ userName, email });
 			return res.json({ success: true, data });
 		}
-		return res.status(400).json({
+		return res.status(404).json({
 			success: false,
 			error: "Please complete the username and email",
 		});
 	} catch (error) {
 		console.log(`[ERROR]: Failed to create new user | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Failed to create new user" });
 	}
 };
@@ -60,7 +60,7 @@ const updateUserById = async (req, res) => {
 	} catch (error) {
 		console.log(`[ERROR]: Failed to update existent user | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Failed to update existent user" });
 	}
 };
@@ -73,7 +73,7 @@ const deleteUserById = async (req, res) => {
 	} catch (error) {
 		console.log(`[ERROR]: Failed to delete user | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Please provide correct ID" });
 	}
 };

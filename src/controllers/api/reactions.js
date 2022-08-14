@@ -20,7 +20,7 @@ const createReactionForThought = async (req, res) => {
 			`[ERROR]: Failed to create a new reaction for present thought | ${error.message}`
 		);
 
-		return res.status(500).json({
+		return res.status(404).json({
 			success: false,
 			error: "Failed to create a new reaction for present thought",
 		});
@@ -41,7 +41,7 @@ const deleteReactionByThought = async (req, res) => {
 	} catch (error) {
 		console.log(`[ERROR]: Failed to delete reaction | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Failed to delete reaction" });
 	}
 };

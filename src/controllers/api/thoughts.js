@@ -7,7 +7,7 @@ const getThoughts = async (req, res) => {
 	} catch (error) {
 		console.log(`[ERROR]: Failed to get thoughts | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Failed to get thoughts" });
 	}
 };
@@ -20,7 +20,7 @@ const getThoughtById = async (req, res) => {
 	} catch (error) {
 		console.log(`[ERROR]: Failed to get thought | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Failed to get thought" });
 	}
 };
@@ -32,14 +32,14 @@ const createThought = async (req, res) => {
 			const data = await Thought.create({ userName, thoughtText });
 			return res.json({ success: true, data });
 		}
-		return res.status(400).json({
+		return res.status(404).json({
 			success: false,
 			error: "Please complete the required fields",
 		});
 	} catch (error) {
 		console.log(`[ERROR]: Failed to create new thought | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Failed to create new thought" });
 	}
 };
@@ -58,7 +58,7 @@ const updateThoughtById = async (req, res) => {
 	} catch (error) {
 		console.log(`[ERROR]: Failed to update thought | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Failed to update thought" });
 	}
 };
@@ -71,7 +71,7 @@ const deleteThoughtById = async (req, res) => {
 	} catch (error) {
 		console.log(`[ERROR]: Failed to delete thought | ${error.message}`);
 		return res
-			.status(500)
+			.status(404)
 			.json({ success: false, error: "Please provide correct ID" });
 	}
 };
